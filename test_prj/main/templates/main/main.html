@@ -1,0 +1,27 @@
+{% extends 'main/base.html'%}
+
+{% block content %}
+
+    {% if confirm_message %}
+        <div id="msg">{{ confirm_message }}</div>
+    {% endif %}
+
+    <div id="form_wrap">
+        <div id="curr_form">
+            {% if form %}
+            <form method="post" action=""> {% csrf_token %}
+                {{ form }}
+
+                <input type="submit" value="Add">
+            </form>
+            {% endif%}
+        </div>
+
+        <div id="curr_list">
+        {% for curr in currs %}
+            <a href="{% url 'curr_list_data' pk=curr.id %}">{{curr}}</a>
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

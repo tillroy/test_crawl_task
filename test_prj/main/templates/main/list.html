@@ -1,0 +1,7 @@
+{% extends 'main/base.html'%}
+
+{% block content %}
+    {% for val in values %}
+        <p class="curr_data">{{val.value}}</p>
+    {% endfor %}
+{% endblock %}

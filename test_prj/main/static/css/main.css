@@ -1,0 +1,39 @@
+#content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#form_wrap{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#curr_form{
+  /*width: 200px;*/
+  display: flex;
+  height: 100%;
+  /*background-color: red;*/
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+#curr_list{
+  width: 200px;
+  height: 100%;
+  background-color: #6F8DAB;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #6F8DAB;
+}
+
+.curr{
+  width: 100%;
+}
+
+

@@ -1,0 +1,38 @@
+{
+	"build_systems":
+	[
+		{
+			"env":
+			{
+				"PYTHONPATH": "/mnt/hdd/myprojects/test_task/test_prj"
+			},
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "uniclue_crawler_builder",
+			"selector": "source.python",
+			"shell_cmd": "\"/mnt/hdd/myprojects/test_task/.env3/bin/python\" -u \"$file\""
+		},
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				"*.sublime-project"
+			],
+			"folder_exclude_patterns":
+			[
+				"__pycache__",
+				".env3"
+			],
+			"path": "/mnt/hdd/myprojects/test_task"
+		}
+	]
+}
